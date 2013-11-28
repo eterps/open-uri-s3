@@ -1,3 +1,5 @@
+require 'uri'
+
 module URI
   class S3 < Generic
     # @return [AWS::S3::S3Object] S3 object (quacks like IO)
