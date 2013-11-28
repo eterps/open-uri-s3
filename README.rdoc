@@ -1,6 +1,8 @@
 = open-uri-s3
 
-Description goes here.
+open('s3://share.blendle.nl/public/hello')
+
+open('s3://share.blendle.nl/public/hello2', 'w'){|f| f.write 'Hello world2!'}
 
 == Contributing to open-uri-s3
  
@@ -16,4 +18,3 @@ Description goes here.
 
 Copyright (c) 2013 Erik Terpstra. See LICENSE.txt for
 further details.
-
