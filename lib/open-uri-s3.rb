@@ -1,3 +1,5 @@
+require 'aws-sdk'
+require 'open-uri'
 require 'uri'
 
 module URI
