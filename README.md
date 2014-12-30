@@ -20,7 +20,7 @@ open('s3://my.bucket/public/hello', 'w'){|f| f.write 'Hello world!'}
 
 ## Documentation
 
-[![open-uri-s3 API Documentation](https://www.omniref.com/ruby/gems/open-uri-s3.png)](https://www.omniref.com/ruby/gems/open-uri-s3)
+[![open-uri-s3 API Documentation](https://dqvhmzwrjy66y.cloudfront.net/assets/badge-d08eb706b0adfe1d16fe2ca9c1e49cbc.png)](https://www.omniref.com/ruby/gems/open-uri-s3)
 
 ## Contributing to open-uri-s3
  
