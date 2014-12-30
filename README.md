@@ -18,6 +18,10 @@ Writing objects:
 open('s3://my.bucket/public/hello', 'w'){|f| f.write 'Hello world!'}
 ```
 
+## Documentation
+
+[![open-uri-s3 API Documentation](https://www.omniref.com/ruby/gems/open-uri-s3.png)](https://www.omniref.com/ruby/gems/open-uri-s3)
+
 ## Contributing to open-uri-s3
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
