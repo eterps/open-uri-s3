@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "open-uri-s3"
-  s.version = "1.0.3"
+  s.version = "1.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Erik Terpstra"]
-  s.date = "2013-11-28"
+  s.authors = ["Erik Terpstra", "Beth Skurrie"]
+  s.date = "2015-03-06"
   s.description = "AWS S3 protocol support for open-uri"
   s.email = "erterpstra@gmail.com"
   s.extra_rdoc_files = [
@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/eterps/open-uri-s3"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "2.0.14"
   s.summary = "AWS S3 protocol support for open-uri"
 
   if s.respond_to? :specification_version then
