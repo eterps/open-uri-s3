@@ -13,6 +13,22 @@ describe URI::S3 do
     allow(AWS::S3).to receive(:new).and_return(s3)
   end
 
+  describe "open" do
+    it "returns the S3 object" do
+      expect(open(uri)).to eq object
+    end
+
+    context "when a block is given" do
+      it "yields the object" do
+        expect { |b| open(uri, &b) }.to yield_with_args(object)
+      end
+
+      it "returns the result of the block" do
+        expect(open(uri) { 'result' }).to eq 'result'
+      end
+    end
+  end
+
   describe "#read" do
     it "reads the object" do
       expect(URI(uri).read).to eq 'contents'

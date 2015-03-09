@@ -17,11 +17,11 @@ module URI
       path = self.path[1..-1]
       object = bucket.objects[path]
 
-      if args[0] == 'w'
+      if block_given?
         yield object
+      else
+        object
       end
-
-      object
     end
 
     def read
