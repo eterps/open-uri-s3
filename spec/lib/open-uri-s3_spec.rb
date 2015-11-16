@@ -10,7 +10,7 @@ describe URI::S3 do
   let(:object) { double('object', read: 'contents') }
 
   before do
-    allow(AWS::S3).to receive(:new).and_return(s3)
+    allow(Aws::S3).to receive(:new).and_return(s3)
   end
 
   describe "open" do
