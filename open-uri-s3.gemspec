@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "open-uri-s3"
-  s.version = "1.3.0"
+  s.version = "1.4.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Erik Terpstra"]
-  s.date = "2015-11-16"
+  s.date = "2015-11-24"
   s.description = "AWS S3 protocol support for open-uri"
   s.email = "erterpstra@gmail.com"
   s.extra_rdoc_files = [
