@@ -7,15 +7,16 @@ module URI
 
     # @return [Aws::S3::Object] S3 object (quacks like IO)
     def open(*args)
-      s3 = ::Aws::S3.new
-      bucket = s3.buckets[self.hostname]
-      if bucket.location_constraint
-        s3 = ::Aws::S3.new(s3_endpoint: "s3-#{bucket.location_constraint}.amazonaws.com")
-        bucket = s3.buckets[self.hostname]
+      client = Aws::S3::Client.new
+      bucket_location = client.get_bucket_location(bucket: self.hostname)
+      location_constraint = bucket_location.data.location_constraint
+
+      if !location_constraint.empty?
+        client = Aws::S3::Client.new(region: location_constraint)
       end
 
       path = self.path[1..-1]
-      object = bucket.objects[path]
+      object = client.get_object(bucket: self.hostname, key: path).body
 
       if block_given?
         yield object
