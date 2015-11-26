@@ -39,5 +39,5 @@ open('s3://my.bucket/public/hello', 'w'){|f| f.write 'Hello world!'}
 Copyright (c) 2013 Erik Terpstra. See LICENSE.txt for
 further details.
 
-[![open-uri-s3 API Documentation](https://dqvhmzwrjy66y.cloudfront.net/assets/badge-d08eb706b0adfe1d16fe2ca9c1e49cbc.png)](https://www.omniref.com/ruby/gems/open-uri-s3)
+[![open-uri-s3 API Documentation](https://www.omniref.com/ruby/gems/open-uri-s3.png)](https://www.omniref.com/ruby/gems/open-uri-s3)
 [open-uri-dangers]: http://sakurity.com/blog/2015/02/28/openuri.html
