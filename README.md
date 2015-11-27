@@ -9,7 +9,7 @@ require 'open-uri-s3'
 Reading objects:
 
 ```ruby
-open('s3://my.bucket/public/hello') # returns Aws::S3::Object (quacks like IO)
+open('s3://my.bucket/public/hello') # returns AWS::S3::S3Object (quacks like IO)
 ```
 
 or a safer option (see [this post][open-uri-dangers] on the dangers of using open-uri with user input)
